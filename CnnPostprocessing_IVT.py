@@ -78,26 +78,21 @@ y_te = tf.reshape(Dat_Testing.IVTm.values.squeeze(), (365,101,113,1))
 
 
 '''
-+++++ NOTA ++++++
++++++ NOTE ++++++
 
-6362 + 365 + 365 non somma a 8108 (numero di dati totali) perchè una il paper
-sembrava saltare dei periodi. Anche nel codice sono stati saltati 
-(considerati solo i periodi Ottobre Aprile)
+6362 + 365 + 365 does not sum up to 8108 (total number of samples) because some of the periods 
+are skipped in the paper as well. Thus, even in the present code some periods have been 
+skipped (only Oct-Apr periods have been considered)
 
 +++++++++++++++++
 '''
 
-
-
 # BUILDING THE CONVOLUTIONAL NEURAL NETWORK ++++++++++++++++++++++++++++++++++
 model = tf.keras.models.Sequential([
-    #tf.keras.layers.Flatten(input_shape=(41,33,1)),
     tf.keras.layers.Conv2D(10,3,activation='relu',input_shape=(101,113,1),padding='same'),
     tf.keras.layers.Conv2D(8,3,activation='relu',padding='same'),
     tf.keras.layers.Conv2D(6,3,activation='relu',padding='same'),
     tf.keras.layers.Conv2D(1,3,activation='relu',padding='same'),
-    #tf.keras.layers.Dense(1353, activation='relu'),
-    #tf.keras.layers.Reshape((41,33,1))
     ])
 
 # PRINTING THE SUMMARY OF THE MODEL ++++++++++++++++++++++++++++++++++++++++++
@@ -112,14 +107,6 @@ model.compile(loss=loss,optimizer=optimizer, metrics=['mean_squared_error'])
 
 # TRAINING OF THE MODEL ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 training = model.fit(x=x_tr,y=y_tr,epochs=2, validation_data=[x_v,y_v], batch_size=8)
-
-'''
-+++++ NOTA ++++++
-
-i validation data vengono usati (linea sopra)
-
-+++++++++++++++++
-'''
 
 
 # EVALUATION OF THE MODEL WITH THE TEST SET ++++++++++++++++++++++++++++++++++
