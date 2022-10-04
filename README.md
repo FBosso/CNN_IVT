@@ -1,4 +1,4 @@
-# [CNN for postprocessing of IVT images]
+# CNN for postprocessing of IVT images
 <img align="right" src="https://i.ibb.co/NspjQxV/logo.webp" alt="logo" width="220">
 
 *Implementation of a Convolutional Neural Network (CNN) for the postprocessing of Integrated water Vapor Transport data.*
