@@ -34,7 +34,7 @@ In the second row are showed, from left to right:
 2. the postprocessed forecast corrected by the CNN;
 3. the difference between the previous 2.
 
-<iframe src="plot.pdf" width="500"></iframe>
+<img src="plot.png" alt="plot" width="500">
 
   
 ## Env Setup
