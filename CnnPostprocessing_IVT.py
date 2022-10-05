@@ -115,6 +115,7 @@ model.evaluate(x_te, y_te)
 # SAVE THE CORRECED IMAGES OF THE TEST SET IN ORDER TO CREATE THE PLOT +++++++
 corrected_images = model.predict(x_te)
 
+#%%
 
 # PLOT OF IMAGES: 
     # - Original, Corrected, Difference between the two
@@ -134,9 +135,9 @@ for i in range(len(x_te)):
     ax6.imshow(np.flip(y_te[i] - corrected_images[i], axis=1))
     ax6.set_title('Difference')
     
-    plt.savefig('prova', dpi=1200)
+    #plt.savefig(f'prova{i}', dpi=1200)
     
-    
+#%%    
     
     
     
