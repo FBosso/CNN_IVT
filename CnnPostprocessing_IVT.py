@@ -134,7 +134,7 @@ for i in range(len(x_te)):
     ax6.imshow(np.flip(y_te[i] - corrected_images[i], axis=1))
     ax6.set_title('Difference')
     
-    plt.savefig('prova.pdf')
+    plt.savefig('prova', dpi=1200)
     
     
     
