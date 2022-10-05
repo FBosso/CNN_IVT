@@ -46,6 +46,13 @@ $ conda create --name myenv
 # install all the dependencies
 $ conda install -c conda-forge tensorflow xarray pandas numpy matplotlib
 
+# download the needed data
+$ wget https://library.ucsd.edu/dc/object/bb88449405/_2_1.zip/download
+
+# keep only the folders across the path "All_Zarr/GFSIVT_F006_zarr
+
+# place the "All_Zarr" folder outside the one containing the script
+
 # run the script CnnPostprocessing_IVT.py
 
 ```
