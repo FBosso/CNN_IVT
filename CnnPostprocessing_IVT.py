@@ -30,7 +30,7 @@ import matplotlib.pyplot as plt
 
 
 # IMPORTING THE DATA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-AllDat = xr.open_zarr('All_Zarr/GFSIVT_F006_zarr')
+AllDat = xr.open_zarr('../All_Zarr/GFSIVT_F006_zarr')
 
 
 # SPLIT DATASET IN: TRAIN, VALIDATION E TEST +++++++++++++++++++++++++++++++++
@@ -106,7 +106,7 @@ optimizer = tf.keras.optimizers.Adam(learning_rate=0.01)
 model.compile(loss=loss,optimizer=optimizer, metrics=['mean_squared_error'])
 
 # TRAINING OF THE MODEL ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-training = model.fit(x=x_tr,y=y_tr,epochs=2, validation_data=[x_v,y_v], batch_size=8)
+training = model.fit(x=x_tr,y=y_tr,epochs=2, validation_data=(x_v,y_v), batch_size=8)
 
 
 # EVALUATION OF THE MODEL WITH THE TEST SET ++++++++++++++++++++++++++++++++++
@@ -134,6 +134,7 @@ for i in range(len(x_te)):
     ax6.imshow(np.flip(y_te[i] - corrected_images[i], axis=1))
     ax6.set_title('Difference')
     
+    plt.savefig('prova.pdf')
     
     
     
