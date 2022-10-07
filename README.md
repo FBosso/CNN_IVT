@@ -1,5 +1,5 @@
 # CNN for postprocessing of IVT images
-<a href="https://github.mapflap.io"><img align="right" src="https://i.ibb.co/NspjQxV/logo.webp" alt="logo" width="220"></a>
+<a href="https://mapflap.github.io"><img align="right" src="https://i.ibb.co/NspjQxV/logo.webp" alt="logo" width="220"></a>
 
 *Implementation of a Convolutional Neural Network (CNN) for the postprocessing of Integrated water Vapor Transport data.*
 
