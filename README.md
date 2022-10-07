@@ -10,7 +10,7 @@
 ## Project Description
 Re-implementation of the notebook referred to the 2019 paper by [Chapman et al.](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019GL083662)
 
-The purpose is to build a ConvNet able to postprocess the IVT (Integrated Vapour Transport)
+The purpose is to build a ConvNet able to postprocess the IVT (Integrated Vapor Transport)
 images derived from NWP models given a set of ground truth IVT values derived from measurement.
 
 
@@ -40,8 +40,11 @@ In the second row are showed, from left to right:
 ## Env Setup
 
 ```bash
-# create a new envirnoment
+# create a new environment
 $ conda create --name myenv
+
+# activate your new environment
+$ conda activate myenv
 
 # install all the dependencies
 $ conda install -c conda-forge tensorflow xarray pandas numpy matplotlib
