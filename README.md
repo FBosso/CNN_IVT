@@ -5,6 +5,10 @@
 ## Author
 [Bosso Francesco](https://github.com/FBosso) - (fra.bosso97@gmail.com)
 
+
+## Project Description
+
+
 <a href="https://francesco-bosso.github.io">
   <img src="https://francesco-bosso.github.io/ico_pizza.ico" 
        alt="logo" 
@@ -13,7 +17,6 @@
        style="margin-left: 15px; margin-bottom: 10px;">
 </a>
 
-## Project Description
 Re-implementation of the notebook referred to the 2019 paper by [Chapman et al.](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019GL083662)
 
 The purpose is to build a ConvNet able to postprocess the IVT (Integrated Vapor Transport)
