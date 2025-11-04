@@ -1,11 +1,17 @@
 # CNN for postprocessing of IVT images
-<a href="https://mapflap.github.io"><img align="right" src="https://i.ibb.co/NspjQxV/logo.webp" alt="logo" width="220"></a>
 
 *Implementation of a Convolutional Neural Network (CNN) for the postprocessing of Integrated water Vapor Transport data.*
 
 ## Author
 [Bosso Francesco](https://github.com/FBosso) - (fra.bosso97@gmail.com)
 
+<a href="https://francesco-bosso.github.io">
+  <img src="https://francesco-bosso.github.io/ico_pizza.ico" 
+       alt="logo" 
+       align="right" 
+       width="120" 
+       style="margin-left: 15px; margin-bottom: 10px;">
+</a>
 
 ## Project Description
 Re-implementation of the notebook referred to the 2019 paper by [Chapman et al.](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019GL083662)
